@@ -1,2 +1,6 @@
-def pow(a, b)
-    return(a ** b)
+def pow(a, b):
+    return a ** b
+
+# Example usage:
+result = pow(2, 3)
+print(result)  # Output: 8
