@@ -1,4 +1,4 @@
-import variable_load_2 as variable
+from variable_load_2 import a
 
 if __name__ == "__main__":
-    print(variable.a)
+    print(a)
