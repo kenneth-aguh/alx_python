@@ -1,2 +1,2 @@
-def raise_exception_msg():
-    raise NameError("This is a custom name exception")
+def raise_exception_msg(message=""):
+    raise NameError(message)
