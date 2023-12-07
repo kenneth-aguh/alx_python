@@ -1,4 +1,4 @@
-def multiple_return(sentence):
+def multiple_returns(sentence):
     if not sentence:
        return 0, None
     else:
