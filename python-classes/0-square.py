@@ -18,8 +18,8 @@ class Square:
         self.__size = value
 
 # Example:
-my_square = Square(5)
-print(my_square.get_size()) 
+#my_square = Square(5)
+#print(my_square.get_size()) 
 
-my_square.set_size(7)
-print(my_square.get_size())  
+#my_square.set_size(7)
+#print(my_square.get_size())  
