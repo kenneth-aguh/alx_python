@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
+# make the class Square.
 
-# this is the class Square
 class Square:
-    # specifying the attributes using __init__ 
+    # state the attributes using __init__ 
     def __init__(self, size):
-        # initializing a square instance
+        # initialize a square instance
         # parameter - size
         # no type / value verification was used
         self.__size = size
@@ -17,9 +17,9 @@ class Square:
     def set_size(self, value):
         self.__size = value
 
-# Example usage:
-square_instance = Square(5)
-print(square_instance.get_size())  # Output: 5
+# Example:
+my_square = Square(5)
+print(my_square.get_size()) 
 
-square_instance.set_size(7)
-print(square_instance.get_size())  # Output: 7
+my_square.set_size(7)
+print(my_square.get_size())  
