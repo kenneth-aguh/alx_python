@@ -1,32 +1,21 @@
 #!/usr/bin/env python3
+''' make the class Square.'''
 
 class Square:
+    '''state the attributes using __init__'''
     def __init__(self, size=0):
-        # Check if is an integer
+        '''initialize a square instance'''
+        '''parameter - size'''
+        '''no type / value verification was used'''
+        '''Set the size attribute'''
+        self.__size = size
+
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         
-        # Check if is less than 0
+        '''Check if is less than 0'''
         if size < 0:
-            raise ValueError("size must be >= 0")
-        
-        # Set the size attribute
-        self.__size = size
-
-    # getters
-    def get_size(self):
-        return self.__size
-    
-    # setter
-    def set_size(self, value):
-        self.__size = value 
-
+            raise ValueError("size must be >= 0")  
+    '''public instance method to return current square area'''
     def area(self):
         return self.__size**2
-
-# Example usage:
-try:
-    our_square = Square(2)
-    print( our_square.area())  # Accessing method
-except Exception as e:
-    print(e)
