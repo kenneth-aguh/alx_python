@@ -9,10 +9,4 @@ class Square:
         '''no type / value verification was used'''
         self.__size = size
     
-    '''getters'''
-    def get_size(self):
-        return self.__size
-    
-    '''setter'''
-    def set_size(self, value):
-        self.__size = value
+
