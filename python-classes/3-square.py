@@ -23,11 +23,11 @@ class Square:
         return self.__size**2
 
     '''getters'''
-    def get_size(self):
+    def size(self):
         return self.__size
     
     '''setter'''
-    def set_size(self, value):
+    def size(self, value):
         '''Set the size attribute'''
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
