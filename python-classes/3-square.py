@@ -23,9 +23,9 @@ class Square:
         return self.__size**2
 
     '''getters'''
-    def size(self):
+    def get_size(self):
         return self.__size
     
     '''setter'''
-    def size(self, value):
+    def set_size(self, value):
         self.__size = value 
