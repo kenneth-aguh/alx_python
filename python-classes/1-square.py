@@ -13,4 +13,17 @@ class Square:
         # Set the size attribute
         self.__size = size
 
-our_square = Square()
+    # getters
+    def get_size(self):
+        return self.__size
+    
+    # setter
+    def set_size(self, value):
+        self.__size = value        
+
+# Example usage:
+try:
+    our_square = Square(2)
+    print( our_square.get_size())  # Accessing private attribute indirectly
+except Exception as e:
+    print(e)
