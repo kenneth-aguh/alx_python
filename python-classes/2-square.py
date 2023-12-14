@@ -27,6 +27,6 @@ class Square:
 # Example usage:
 try:
     our_square = Square(2)
-    print( our_square.get_size())  # Accessing private attribute indirectly
+    print( our_square.area())  # Accessing method
 except Exception as e:
     print(e)
