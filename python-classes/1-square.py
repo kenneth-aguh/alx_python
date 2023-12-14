@@ -3,7 +3,7 @@
 
 class Square:
     '''state the attributes using __init__'''
-    def __init__(self, size):
+    def __init__(self, size=0):
         '''initialize a square instance'''
         '''parameter - size'''
         '''no type / value verification was used'''
