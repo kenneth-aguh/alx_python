@@ -20,13 +20,11 @@ class Rectangle(Base):
         self.x = x
         '''assign each argument to the right attribute'''
         self.y = y
-    '''creating separate methods for validation and then calling
-      those methods in the property setters'''
+    '''creating separate methods for integer validation'''
     def __validate_integers(self, value, attribute_name):
         if not isinstance(value, int):
             raise TypeError(f"{attribute_name} must be an integer")
-    '''creating separate methods for validation and then calling
-      those methods in the property setters'''
+    '''creating separate methods for positives validation'''
     def __validate_positives(self, value, attribute_name):
         if value <= 0:
             raise ValueError(f"{attribute_name} must be > 0")
@@ -43,6 +41,7 @@ class Rectangle(Base):
     adding a layer of protection'''
     @width.setter
     def width(self, value):
+        ''' and then calling those validation methods in the property setters'''
         self.__validate_integers(value, 'width')
         self.__validate_positives(value, 'width')
         self.__width = value
@@ -59,6 +58,7 @@ class Rectangle(Base):
     adding a layer of protection'''
     @height.setter
     def height(self, value):
+        ''' and then calling those validation methods in the property setters'''
         self.__validate_integers(value, 'height')
         self.__validate_positives(value, 'height')
         self.__height = value
@@ -75,6 +75,7 @@ class Rectangle(Base):
     adding a layer of protection'''
     @x.setter
     def x(self, value):
+        ''' and then calling those validation methods in the property setters'''
         self.__validate_integers(value, 'x')
         self.__validate_positives(value, 'x')
         self.__x = value
@@ -91,6 +92,7 @@ class Rectangle(Base):
     adding a layer of protection'''
     @y.setter
     def y(self, value):
+        ''' and then calling those validation methods in the property setters'''
         self.__validate_integers(value, 'y')
         self.__validate_positives(value, 'y')
         self.__y = value
