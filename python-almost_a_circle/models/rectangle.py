@@ -1,5 +1,5 @@
 '''Import the base module'''
-from base import Base
+from models.base import Base
 
 '''
 The Rectangle class inherits from the Base class.
