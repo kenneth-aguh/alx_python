@@ -22,10 +22,12 @@ class Rectangle(Base):
         self.y = y
     '''creating separate methods for integer validation'''
     def __validate_integers(self, value, attribute_name):
+        '''lets state the condition for validation'''
         if not isinstance(value, int):
             raise TypeError(f"{attribute_name} must be an integer")
     '''creating separate methods for positives validation'''
     def __validate_positives(self, value, attribute_name):
+        '''lets state the condition for validation'''
         if value <= 0:
             raise ValueError(f"{attribute_name} must be > 0")
 
