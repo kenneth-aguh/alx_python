@@ -2,7 +2,7 @@
 from base import Base
 
 '''
-The Rectangle class inherits from the Base class
+The Rectangle class inherits from the Base class.
 '''
 class Rectangle(Base):
     def __init__(self, width, height, x=0, y=0, id=None):

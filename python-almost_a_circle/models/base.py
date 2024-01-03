@@ -1,5 +1,5 @@
 '''
-This class can serve as the base class for other classes in your project,
+This class can serve as the base class for other classes in my project,
 managing the id attribute in a consistent way across different classes
 
 '''
