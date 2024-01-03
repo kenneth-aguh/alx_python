@@ -41,6 +41,7 @@ class Rectangle(Base):
     '''width setter -Using getters and setters provides a 
     way to validate and control the assignment of values to the attributes, 
     adding a layer of protection'''
+
     @width.setter
     def width(self, value):
         ''' and then calling those validation methods in the property setters'''
