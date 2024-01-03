@@ -18,8 +18,8 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
-    '''width getter - Using getters and setters provides a 
-    way to validate and control the assignment of values to the attributes, 
+    '''width getter - Using getters and setters provides a way to validate and 
+    control the assignment of values to the attributes, 
     adding a layer of protection'''
     @property
     def width(self):
@@ -34,7 +34,7 @@ class Rectangle(Base):
 
     '''height getter - Using getters and setters provides a 
     way to validate and control the assignment of values to the attributes, 
-    adding a layer of protection'''
+    adding a layer of protectionmm '''
     @property
     def height(self):
         return self.__height
