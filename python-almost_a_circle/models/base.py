@@ -3,9 +3,8 @@ This class can serve as the base class for other classes in your project,
 managing the id attribute in a consistent way across different classes
 
 '''
-
 class Base:
-    # private class attribute
+    ''' private class attribute is stated '''
     __nb_objects = 0
 
     '''
@@ -15,7 +14,7 @@ class Base:
     '''
 
     def __init__(self, id=None):
-        # class constructor
+        ''' class constructor is called  as seen here '''
         if id is not None:
             '''assign the public instance attribute id with 
             the argument value'''
