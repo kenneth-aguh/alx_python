@@ -14,8 +14,11 @@ class Rectangle(Base):
         super().__init__(id)
         '''assign each argument to the right attribute'''
         self.width = width
+        '''assign each argument to the right attribute'''
         self.height = height
+        '''assign each argument to the right attribute'''
         self.x = x
+        '''assign each argument to the right attribute'''
         self.y = y
 
     '''width getter - Using getters and setters provides a way to validate and 
