@@ -20,6 +20,16 @@ class Rectangle(Base):
         self.x = x
         '''assign each argument to the right attribute'''
         self.y = y
+    '''creating separate methods for validation and then calling
+      those methods in the property setters'''
+    def __validate_integers(self, value, attribute_name):
+        if not isinstance(value, int):
+            raise TypeError(f"{attribute_name} must be an integer")
+    '''creating separate methods for validation and then calling
+      those methods in the property setters'''
+    def __validate_positives(self, value, attribute_name):
+        if value <= 0:
+            raise ValueError(f"{attribute_name} must be > 0")
 
     '''width getter - Using getters and setters provides a way to validate and 
     control the assignment of values to the attributes, 
@@ -33,12 +43,9 @@ class Rectangle(Base):
     adding a layer of protection'''
     @width.setter
     def width(self, value):
-        if not isinstance(value, int):
-            raise TypeError("width must be an integer")
-        elif value <= 0:
-            raise ValueError("width must be > 0")
-        else:
-            self.__width = value
+        self.__validate_integers(value, 'width')
+        self.__validate_positives(value, 'width')
+        self.__width = value
 
     '''height getter - Using getters and setters provides a 
     way to validate and control the assignment of values to the attributes, 
@@ -52,12 +59,9 @@ class Rectangle(Base):
     adding a layer of protection'''
     @height.setter
     def height(self, value):
-        if not isinstance(value, int):
-            raise TypeError("height must be an integer")
-        elif value <= 0:
-            raise ValueError("height must be > 0")
-        else:
-            self.__width = value
+        self.__validate_integers(value, 'height')
+        self.__validate_positives(value, 'height')
+        self.__height = value
 
     '''x getter- Using getters and setters provides a 
     way to validate and control the assignment of values to the attributes, 
@@ -71,12 +75,9 @@ class Rectangle(Base):
     adding a layer of protection'''
     @x.setter
     def x(self, value):
-        if not isinstance(value, int):
-            raise TypeError("x must be an integer")
-        elif value <= 0:
-            raise ValueError("x must be > 0")
-        else:
-            self.__width = value
+        self.__validate_integers(value, 'x')
+        self.__validate_positives(value, 'x')
+        self.__x = value
 
     ''' y getter - Using getters and setters provides a 
     way to validate and control the assignment of values to the attributes, 
@@ -90,9 +91,6 @@ class Rectangle(Base):
     adding a layer of protection'''
     @y.setter
     def y(self, value):
-        if not isinstance(value, int):
-            raise TypeError("y must be an integer")
-        elif value <= 0:
-            raise ValueError("y must be > 0")
-        else:
-            self.__width = value
+        self.__validate_integers(value, 'y')
+        self.__validate_positives(value, 'y')
+        self.__y = value
