@@ -5,6 +5,10 @@ from base import Base
 The Rectangle class inherits from the Base class.
 '''
 class Rectangle(Base):
+    ''' The class constructor (__init__) calls the super class 
+    with the provided id and assigns the other arguments 
+    (width, height, x, y) to the appropriate attributes'''
+    
     def __init__(self, width, height, x=0, y=0, id=None):
         '''call the super class with id'''
         super().__init__(id)
