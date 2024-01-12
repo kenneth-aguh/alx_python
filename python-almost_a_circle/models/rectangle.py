@@ -17,14 +17,6 @@ class Rectangle(Base):
         self.__x = x
         self.__y = y
 
-    def __validate_integers(self, value, attribute_name):
-        if not isinstance(value, int):
-            raise TypeError(f"{attribute_name} must be an integer")
-        
-    def __validate_positives(self, value, attribute_name):
-        if value <= 0:
-            raise ValueError(f"{attribute_name} must be > 0")
-
     '''adding a layer of protection'''
     @property
     def width(self):
