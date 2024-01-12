@@ -90,9 +90,6 @@ class Rectangle(Base):
     def y(self):
         return self.__y
 
-    '''y setter -Using getters and setters provides a 
-    way to validate and control the assignment of values to the attributes, 
-    adding a layer of protection'''
     @y.setter
     def y(self, value):
         ''' and then calling those validation methods in the property setters'''
