@@ -8,7 +8,7 @@ class Rectangle(Base):
     (width, height, x, y) to the appropriate attributes'''
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        
+        '''adding a layer of protection'''
         super().__init__(id)
     
         self.__width = width
@@ -16,19 +16,22 @@ class Rectangle(Base):
         self.__height = height
         self.__x = x
         self.__y = y
-    '''adding a layer of protection'''
+    
     def __validate_integers(self, value, attribute_name):
+        '''adding a layer of protection'''
         if not isinstance(value, int):
             raise TypeError(f"{attribute_name} must be an integer")
         
-    '''adding a layer of protection''' 
+     
     def __validate_positives(self, value, attribute_name):
+        '''adding a layer of protection'''
         if value <= 0:
             raise ValueError(f"{attribute_name} must be > 0")
 
     '''adding a layer of protection'''
     @property
     def width(self):
+        '''adding a layer of protection'''
         return self.__width
     
 
@@ -49,6 +52,7 @@ class Rectangle(Base):
     adding a layer of protectionmm '''
     @property
     def height(self):
+        '''adding a layer of protection'''
         return self.__height
 
     '''height setter - Using getters and setters provides a 
@@ -66,6 +70,7 @@ class Rectangle(Base):
     adding a layer of protection'''
     @property
     def x(self):
+        '''adding a layer of protection'''
         return self.__x
 
     '''x setter - Using getters and setters provides a 
@@ -83,6 +88,7 @@ class Rectangle(Base):
     adding a layer of protection'''
     @property
     def y(self):
+        '''adding a layer of protection'''
         return self.__y
 
     @y.setter
